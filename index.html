@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFQ8M0VSFN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RFQ8M0VSFN');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Percentage, Discount &amp; Tip Calculator — Gamility Tools</title>
+  <meta name="description" content="Free online financial and mathematical percentage calculator: direct percentage, percentage change, retail store discount, profit margin, and restaurant tips. 100% private.">
+  <meta name="keywords" content="percentage calculator, percent change, discount calculator, markup calculator, profit margin, tip calculator, sales tax calculator, math tools">
+  <meta name="theme-color" content="#090e1a">
+    <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Percentage, Discount &amp; Tip Calculator — Gamility Tools">
+  <meta property="og:description" content="Free online financial and mathematical percentage calculator: direct percentage, percentage change, retail store discount, profit margin, and restaurant tips. 100% private.">
+  <meta property="og:image" content="preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Percentage, Discount &amp; Tip Calculator — Gamility Tools">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Percentage, Discount &amp; Tip Calculator — Gamility Tools">
+  <meta name="twitter:description" content="Free online financial and mathematical percentage calculator: direct percentage, percentage change, retail store discount, profit margin, and restaurant tips. 100% private.">
+  <meta name="twitter:image" content="preview.png">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top Return Ribbon -->
+  <header class="top-nav-ribbon" role="banner">
+    <div class="ribbon-container">
+      <div class="ribbon-left">
+        <a href="https://mahesh-yennam.github.io/Gamility/" class="ribbon-brand" title="Gamility Home">
+          <svg class="brand-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="6" width="20" height="12" rx="4"></rect>
+            <path d="M6 12h4m-2-2v4m7-3h.01m3 2h.01"></path>
+          </svg>
+          <span class="brand-name">Gamility</span>
+          <span class="brand-badge">Tools</span>
+        </a>
+      </div>
+      <div class="ribbon-right">
+        <a href="https://mahesh-yennam.github.io/Gamility/tools.html" class="ribbon-back-btn" title="Return to Utility Tools Hub">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Back to Tools</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main App Shell -->
+  <main class="app-main" id="main-content">
+    <div class="app-container">
+
+      <!-- Tool Header -->
+      <header class="tool-hero">
+        <div class="hero-header-row">
+          <div class="hero-title-group">
+            <div class="tool-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="5" x2="5" y2="19"></line>
+                <circle cx="6.5" cy="6.5" r="2.5"></circle>
+                <circle cx="17.5" cy="17.5" r="2.5"></circle>
+              </svg>
+              <span>Finance &amp; Math Utility</span>
+            </div>
+            <h1 class="hero-title">Percentage, Discount &amp; Tip Calculator</h1>
+            <p class="hero-desc">Calculate direct percentages, percentage increases/decreases, store sales discounts, profit margins, and restaurant tips with step-by-step formulas.</p>
+          </div>
+          <div class="privacy-pill" title="All calculations execute 100% locally in your web browser.">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            <span>100% In-Browser &amp; Private</span>
+          </div>
+        </div>
+
+        <!-- Master Tabs Row -->
+        <div class="calculator-tabs-row" role="tablist">
+          <button class="calc-tab-btn active" data-tab="direct" role="tab" aria-selected="true">
+            <span>Direct %</span>
+          </button>
+          <button class="calc-tab-btn" data-tab="change" role="tab" aria-selected="false">
+            <span>Percentage Change (±%)</span>
+          </button>
+          <button class="calc-tab-btn" data-tab="discount" role="tab" aria-selected="false">
+            <span>Discount &amp; Tax</span>
+          </button>
+          <button class="calc-tab-btn" data-tab="margin" role="tab" aria-selected="false">
+            <span>Markup &amp; Margin</span>
+          </button>
+          <button class="calc-tab-btn" data-tab="tip" role="tab" aria-selected="false">
+            <span>Tip &amp; Bill Split</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Global Controls Bar -->
+      <section class="global-controls-card">
+        <div class="controls-group">
+          <label class="control-label" for="currency-select">Currency Symbol:</label>
+          <select id="currency-select" class="custom-select">
+            <option value="$">$ (USD / CAD / AUD)</option>
+            <option value="€">€ (EUR)</option>
+            <option value="£">£ (GBP)</option>
+            <option value="₹">₹ (INR)</option>
+            <option value="¥">¥ (JPY / CNY)</option>
+          </select>
+        </div>
+        <div class="controls-group">
+          <label class="control-label" for="decimal-select">Decimal Precision:</label>
+          <select id="decimal-select" class="custom-select">
+            <option value="2">2 Decimals (0.00)</option>
+            <option value="0">0 Decimals (Integers)</option>
+            <option value="4">4 Decimals (0.0000)</option>
+          </select>
+        </div>
+        <div class="controls-group controls-actions">
+          <button class="tool-btn" id="btn-reset-current" type="button">Reset Values</button>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           TAB 1: DIRECT PERCENTAGE
+           ===================================================================== -->
+      <section class="calc-card active" id="tab-direct">
+        <div class="calc-card-grid">
+          
+          <!-- Sub-form A: What is X% of Y? -->
+          <div class="calc-sub-card">
+            <h3 class="calc-card-title">What is <span class="highlight-var">X%</span> of <span class="highlight-var">Y</span>?</h3>
+            <div class="inputs-row">
+              <div class="input-group">
+                <label for="direct-a-percent">Percentage (%)</label>
+                <div class="input-addon-wrapper">
+                  <input type="number" id="direct-a-percent" class="calc-input" value="15" step="any">
+                  <span class="input-addon">%</span>
+                </div>
+              </div>
+              <div class="input-group">
+                <label for="direct-a-total">Total Value (Y)</label>
+                <div class="input-addon-wrapper">
+                  <input type="number" id="direct-a-total" class="calc-input" value="250" step="any">
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Presets -->
+            <div class="presets-row">
+              <span class="preset-label">Presets:</span>
+              <button class="preset-pill" data-target="direct-a-percent" data-val="5" type="button">5%</button>
+              <button class="preset-pill" data-target="direct-a-percent" data-val="10" type="button">10%</button>
+              <button class="preset-pill" data-target="direct-a-percent" data-val="15" type="button">15%</button>
+              <button class="preset-pill" data-target="direct-a-percent" data-val="20" type="button">20%</button>
+              <button class="preset-pill" data-target="direct-a-percent" data-val="25" type="button">25%</button>
+              <button class="preset-pill" data-target="direct-a-percent" data-val="50" type="button">50%</button>
+            </div>
+
+            <!-- Result Hero -->
+            <div class="result-box">
+              <div class="result-label">Result</div>
+              <div class="result-val-row">
+                <span class="result-number" id="direct-a-result">37.50</span>
+                <button class="mini-copy-btn" id="btn-copy-direct-a" type="button">Copy</button>
+              </div>
+              <div class="formula-pill" id="direct-a-formula">Formula: (15 ÷ 100) × 250 = 37.50</div>
+            </div>
+          </div>
+
+          <!-- Sub-form B: X is what percent of Y? -->
+          <div class="calc-sub-card">
+            <h3 class="calc-card-title"><span class="highlight-var">X</span> is what percent of <span class="highlight-var">Y</span>?</h3>
+            <div class="inputs-row">
+              <div class="input-group">
+                <label for="direct-b-part">Part (X)</label>
+                <div class="input-addon-wrapper">
+                  <input type="number" id="direct-b-part" class="calc-input" value="45" step="any">
+                </div>
+              </div>
+              <div class="input-group">
+                <label for="direct-b-whole">Whole (Y)</label>
+                <div class="input-addon-wrapper">
+                  <input type="number" id="direct-b-whole" class="calc-input" value="180" step="any">
+                </div>
+              </div>
+            </div>
+
+            <!-- Result Hero -->
+            <div class="result-box">
+              <div class="result-label">Percentage Proportion</div>
+              <div class="result-val-row">
+                <span class="result-number" id="direct-b-result">25.00%</span>
+                <button class="mini-copy-btn" id="btn-copy-direct-b" type="button">Copy</button>
+              </div>
+              <div class="formula-pill" id="direct-b-formula">Formula: (45 ÷ 180) × 100 = 25.00%</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           TAB 2: PERCENTAGE CHANGE (INCREASE / DECREASE)
+           ===================================================================== -->
+      <section class="calc-card hidden" id="tab-change">
+        <div class="calc-sub-card">
+          <h3 class="calc-card-title">Percentage Increase &amp; Decrease</h3>
+          <p class="calc-card-sub">Calculate the percentage change between an initial value and a final value.</p>
+          
+          <div class="inputs-row">
+            <div class="input-group">
+              <label for="change-v1">Initial Value (V1)</label>
+              <div class="input-addon-wrapper">
+                <input type="number" id="change-v1" class="calc-input" value="80" step="any">
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="change-v2">Final Value (V2)</label>
+              <div class="input-addon-wrapper">
+                <input type="number" id="change-v2" class="calc-input" value="120" step="any">
+              </div>
+            </div>
+          </div>
+
+          <!-- Trend & Comparison Stats -->
+          <div class="result-box">
+            <div class="result-label">Percentage Change</div>
+            <div class="result-val-row">
+              <div class="change-badge badge-increase" id="change-direction-badge">
+                <span id="change-arrow">▲</span>
+                <span id="change-result">+50.00%</span>
+              </div>
+              <button class="mini-copy-btn" id="btn-copy-change" type="button">Copy</button>
+            </div>
+
+            <div class="details-stats-grid">
+              <div class="detail-stat">
+                <span class="detail-label">Absolute Difference:</span>
+                <strong id="change-diff">+40.00</strong>
+              </div>
+              <div class="detail-stat">
+                <span class="detail-label">Multiplier:</span>
+                <strong id="change-multiplier">1.50×</strong>
+              </div>
+            </div>
+
+            <div class="formula-pill" id="change-formula">Formula: ((120 - 80) ÷ 80) × 100 = +50.00%</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           TAB 3: RETAIL DISCOUNT & SALES TAX
+           ===================================================================== -->
+      <section class="calc-card hidden" id="tab-discount">
+        <div class="calc-sub-card">
+          <h3 class="calc-card-title">Retail Discount &amp; Sales Tax Calculator</h3>
+          <p class="calc-card-sub">Calculate final checkout cost, markdown savings, and sales tax amount.</p>
+
+          <div class="inputs-row">
+            <div class="input-group">
+              <label for="discount-price">Original Price</label>
+              <div class="input-addon-wrapper">
+                <span class="input-addon addon-currency">$</span>
+                <input type="number" id="discount-price" class="calc-input" value="129.99" step="any">
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="discount-pct">Discount (%)</label>
+              <div class="input-addon-wrapper">
+                <input type="number" id="discount-pct" class="calc-input" value="25" step="any">
+                <span class="input-addon">%</span>
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="discount-tax">Sales Tax (%) [Optional]</label>
+              <div class="input-addon-wrapper">
+                <input type="number" id="discount-tax" class="calc-input" value="8.5" step="any">
+                <span class="input-addon">%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Presets -->
+          <div class="presets-row">
+            <span class="preset-label">Discount Presets:</span>
+            <button class="preset-pill" data-target="discount-pct" data-val="10" type="button">10%</button>
+            <button class="preset-pill" data-target="discount-pct" data-val="15" type="button">15%</button>
+            <button class="preset-pill" data-target="discount-pct" data-val="20" type="button">20%</button>
+            <button class="preset-pill" data-target="discount-pct" data-val="25" type="button">25%</button>
+            <button class="preset-pill" data-target="discount-pct" data-val="30" type="button">30%</button>
+            <button class="preset-pill" data-target="discount-pct" data-val="40" type="button">40%</button>
+            <button class="preset-pill" data-target="discount-pct" data-val="50" type="button">50%</button>
+          </div>
+
+          <!-- Result Hero -->
+          <div class="result-box">
+            <div class="result-label">Final Price to Pay</div>
+            <div class="result-val-row">
+              <span class="result-number result-highlight-emerald" id="discount-final-price">$105.78</span>
+              <button class="mini-copy-btn" id="btn-copy-discount" type="button">Copy</button>
+            </div>
+
+            <div class="details-stats-grid">
+              <div class="detail-stat">
+                <span class="detail-label">You Save (Discount):</span>
+                <strong class="text-emerald" id="discount-savings">$32.50</strong>
+              </div>
+              <div class="detail-stat">
+                <span class="detail-label">Price After Discount:</span>
+                <strong id="discount-subtotal">$97.49</strong>
+              </div>
+              <div class="detail-stat">
+                <span class="detail-label">Estimated Tax:</span>
+                <strong id="discount-tax-amt">$8.29</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           TAB 4: MARKUP & PROFIT MARGIN
+           ===================================================================== -->
+      <section class="calc-card hidden" id="tab-margin">
+        <div class="calc-sub-card">
+          <h3 class="calc-card-title">Markup &amp; Profit Margin Calculator</h3>
+          <p class="calc-card-sub">Determine profitable selling prices, gross margin dollars, and markup percentages.</p>
+
+          <div class="inputs-row">
+            <div class="input-group">
+              <label for="margin-cost">Unit Cost Price</label>
+              <div class="input-addon-wrapper">
+                <span class="input-addon addon-currency">$</span>
+                <input type="number" id="margin-cost" class="calc-input" value="40.00" step="any">
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="margin-markup">Markup Percentage (%)</label>
+              <div class="input-addon-wrapper">
+                <input type="number" id="margin-markup" class="calc-input" value="50" step="any">
+                <span class="input-addon">%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Result Hero -->
+          <div class="result-box">
+            <div class="result-label">Recommended Selling Price</div>
+            <div class="result-val-row">
+              <span class="result-number result-highlight-cyan" id="margin-selling-price">$60.00</span>
+              <button class="mini-copy-btn" id="btn-copy-margin" type="button">Copy</button>
+            </div>
+
+            <div class="details-stats-grid">
+              <div class="detail-stat">
+                <span class="detail-label">Gross Profit:</span>
+                <strong class="text-emerald" id="margin-profit">$20.00</strong>
+              </div>
+              <div class="detail-stat">
+                <span class="detail-label">Profit Margin:</span>
+                <strong id="margin-margin-pct">33.33%</strong>
+              </div>
+              <div class="detail-stat">
+                <span class="detail-label">Markup Ratio:</span>
+                <strong id="margin-ratio">1.50×</strong>
+              </div>
+            </div>
+
+            <div class="formula-pill" id="margin-formula">Selling Price = Cost + (Cost × Markup%) &bull; Margin = Profit ÷ Selling Price</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           TAB 5: TIP & BILL SPLITTER
+           ===================================================================== -->
+      <section class="calc-card hidden" id="tab-tip">
+        <div class="calc-sub-card">
+          <h3 class="calc-card-title">Restaurant Tip &amp; Bill Splitter</h3>
+          <p class="calc-card-sub">Calculate gratuity tips and split the final check evenly among friends.</p>
+
+          <div class="inputs-row">
+            <div class="input-group">
+              <label for="tip-bill">Bill Subtotal</label>
+              <div class="input-addon-wrapper">
+                <span class="input-addon addon-currency">$</span>
+                <input type="number" id="tip-bill" class="calc-input" value="84.50" step="any">
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="tip-pct">Tip Percentage (%)</label>
+              <div class="input-addon-wrapper">
+                <input type="number" id="tip-pct" class="calc-input" value="18" step="any">
+                <span class="input-addon">%</span>
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="tip-people">Split Between (People)</label>
+              <div class="input-addon-wrapper">
+                <input type="number" id="tip-people" class="calc-input" value="3" min="1" step="1">
+                <span class="input-addon">👤</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Tip Presets -->
+          <div class="presets-row">
+            <span class="preset-label">Tip Presets:</span>
+            <button class="preset-pill" data-target="tip-pct" data-val="10" type="button">10%</button>
+            <button class="preset-pill" data-target="tip-pct" data-val="15" type="button">15%</button>
+            <button class="preset-pill" data-target="tip-pct" data-val="18" type="button">18%</button>
+            <button class="preset-pill" data-target="tip-pct" data-val="20" type="button">20%</button>
+            <button class="preset-pill" data-target="tip-pct" data-val="25" type="button">25%</button>
+          </div>
+
+          <!-- Result Hero -->
+          <div class="result-box">
+            <div class="result-label">Total to Pay Per Person</div>
+            <div class="result-val-row">
+              <span class="result-number result-highlight-amber" id="tip-per-person">$33.24</span>
+              <button class="mini-copy-btn" id="btn-copy-tip" type="button">Copy</button>
+            </div>
+
+            <div class="details-stats-grid">
+              <div class="detail-stat">
+                <span class="detail-label">Tip Per Person:</span>
+                <strong class="text-amber" id="tip-amt-per-person">$5.07</strong>
+              </div>
+              <div class="detail-stat">
+                <span class="detail-label">Total Tip Amount:</span>
+                <strong id="tip-total-amt">$15.21</strong>
+              </div>
+              <div class="detail-stat">
+                <span class="detail-label">Grand Total Bill:</span>
+                <strong id="tip-grand-total">$99.71</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Platform Footer -->
+      <footer class="tool-footer">
+        <p class="footer-copy">Copyright &copy; 2026 Gamility. All rights reserved. &bull; 100% In-Browser Financial &amp; Math Engine</p>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

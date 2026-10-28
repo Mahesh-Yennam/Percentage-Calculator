@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="pctGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="pctGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#10b981" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <!-- Background Rounded Rect -->
+  <rect width="64" height="64" rx="14" fill="#090e1a"/>
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="url(#pctGrad)" stroke-width="2" stroke-opacity="0.8"/>
+  
+  <!-- Stylized "%" Percentage Symbol with growth indicator -->
+  <g filter="url(#pctGlow)">
+    <!-- Slash -->
+    <line x1="44" y1="18" x2="20" y2="46" stroke="#06b6d4" stroke-width="3.6" stroke-linecap="round"/>
+    
+    <!-- Top-left Circle -->
+    <circle cx="23" cy="23" r="5" fill="none" stroke="#10b981" stroke-width="3"/>
+    
+    <!-- Bottom-right Circle -->
+    <circle cx="41" cy="41" r="5" fill="none" stroke="#3b82f6" stroke-width="3"/>
+
+    <!-- Subtle growth sparkle -->
+    <circle cx="48" cy="18" r="2" fill="#38bdf8"/>
+  </g>
+</svg>

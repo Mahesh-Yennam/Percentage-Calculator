@@ -1,0 +1,16 @@
+{
+  "name": "Percentage, Discount & Tip Calculator — Gamility Tools",
+  "short_name": "Percent Calc",
+  "description": "Fast, private mathematical & financial percentage calculator: discounts, percentage change, markups, and bill tips.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#090e1a",
+  "theme_color": "#090e1a",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
